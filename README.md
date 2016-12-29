@@ -6,4 +6,8 @@
 4、md5加密工具；
 5、base64加解密工具；
 6、rsa签名工具；
-7、MD5andKL
+7、MD5andKL；
+8、AES加密；
+9、AzDG可逆加密算法；
+10、Blowfish 加密、解密；
+11、hex；
