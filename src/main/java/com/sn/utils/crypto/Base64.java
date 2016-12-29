@@ -3,7 +3,7 @@ package com.sn.utils.crypto;
 /**
  * base64编码/解码
  */
-public final class Base64Util {
+public final class Base64 {
 
 	static private final int BASELENGTH = 128;
 	static private final int LOOKUPLENGTH = 64;

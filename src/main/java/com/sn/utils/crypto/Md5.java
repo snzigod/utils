@@ -8,7 +8,7 @@ import java.security.NoSuchAlgorithmException;
 /**
  * md5工具
  */
-public class Md5Util {
+public class Md5 {
 
 	/**
 	 * 获取字符串的Md5码
