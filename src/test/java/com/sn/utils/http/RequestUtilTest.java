@@ -1,13 +1,13 @@
 package com.sn.utils.http;
 
-import junit.framework.TestCase;
+import com.sn.utils.base.BaseTest;
 
-public class RequestUtilTest extends TestCase {
+public class RequestUtilTest extends BaseTest {
 
 	public void testDoGet() {
 		String url = "http://www.baidu.com";
 		String param = "";
-		System.out.println(RequestUtil.doGet(url, param));
+		logger.info(RequestUtil.doGet(url, param));
 	}
 
 	public void testDoPost() {

@@ -1,15 +1,15 @@
 package com.sn.utils.pinyin;
 
-import junit.framework.TestCase;
+import com.sn.utils.base.BaseTest;
 
-public class PinyinUtilTest extends TestCase {
+public class PinyinUtilTest extends BaseTest {
 
 	public void testGetFirstSpell() {
-		System.out.println("获取拼音首字母：" + PinyinUtil.getFirstSpell("周国鑫"));
+		logger.info("获取拼音首字母：" + PinyinUtil.getFirstSpell("周国鑫"));
 	}
 
 	public void testGetFullSpell() {
-		System.out.println("获取拼音：" + PinyinUtil.getFullSpell("周国鑫"));
+		// TODO
 	}
 
 }

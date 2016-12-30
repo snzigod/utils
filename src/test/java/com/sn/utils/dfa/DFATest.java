@@ -3,9 +3,9 @@ package com.sn.utils.dfa;
 import java.util.ArrayList;
 import java.util.List;
 
-import junit.framework.TestCase;
+import com.sn.utils.base.BaseTest;
 
-public class DFATest extends TestCase {
+public class DFATest extends BaseTest {
 
 	public void testSearchKeywordString() {
 		DFA dfa = DFA.getInstance();
@@ -15,12 +15,9 @@ public class DFATest extends TestCase {
 		try {
 			dfa.createKeywordTree(keywordList);
 			dfa.printAllKeywordTree(DFA.getRootNode());
-
 			String str = dfa.replaceKeyword("2014中国人民富裕了", "=");
-
-			System.out.println("1--->" + str);
+			logger.info(str);
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
