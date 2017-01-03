@@ -1,9 +1,10 @@
 package com.sn.utils.base;
 
-import org.apache.log4j.Logger;
-
 import junit.framework.TestCase;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 public class BaseTest extends TestCase {
-	protected Logger logger = Logger.getLogger(this.getClass());
+	protected static Logger logger = LoggerFactory.getLogger(BaseTest.class);
 }
