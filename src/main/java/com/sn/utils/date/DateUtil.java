@@ -10,6 +10,10 @@ import java.util.Date;
  */
 public abstract class DateUtil {
 
+	public static Date getNowDate() {
+		return new Date();
+	}
+
 	/**
 	 * 日期字符串转换为日期
 	 * 
