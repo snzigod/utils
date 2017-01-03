@@ -4,6 +4,14 @@ package com.sn.utils.date;
  * 日期格式化
  */
 public abstract class DateFormat {
+	// 年
+	public final static String YYYY = "yyyy";
+	public final static String YYYY_EN = "yyyy";
+	public final static String YYYY_CN = "yyyy年";
+	// 年月
+	public final static String YYYYMM = "yyyyMM";
+	public final static String YYYYMM_EN = "yyyy-MM";
+	public final static String YYYYMM_CN = "yyyy年MM月";
 	// 年月日
 	public final static String YYYYMMDD = "yyyyMMdd";
 	public final static String YYYYMMDD_EN = "yyyy-MM-dd";
@@ -20,6 +28,10 @@ public abstract class DateFormat {
 	public final static String YYYYMMDDHH24MMSS = "yyyyMMddHHmmss";
 	public final static String YYYYMMDDHH24MMSS_EN = "yyyy-MM-dd HH:mm:ss";
 	public final static String YYYYMMDDHH24MMSS_CN = "yyyy年MM月dd日HH时mm分ss秒";
+	// 时
+	public final static String HH24 = "HH";
+	public final static String HH24_EN = "HH";
+	public final static String HH24_CN = "HH时";
 	// 时分
 	public final static String HH24MM = "HHmm";
 	public final static String HH24MM_EN = "HH:mm";
