@@ -17,6 +17,8 @@
 		<junit.version>3.8.1</junit.version>
 		<spring.version>3.2.10.RELEASE</spring.version>
 		<jedis.version>2.5.2</jedis.version>
+		<mybatis.version>3.2.8</mybatis.version>
+		<mybatis-spring.version>1.2.2</mybatis-spring.version>
 	</properties>
 
 	<dependencies>
@@ -93,6 +95,17 @@
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-log4j12</artifactId>
 			<version>${slf4j.version}</version>
+		</dependency>
+		<!-- mybatis -->
+		<dependency>
+			<groupId>org.mybatis</groupId>
+			<artifactId>mybatis</artifactId>
+			<version>${mybatis.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.mybatis</groupId>
+			<artifactId>mybatis-spring</artifactId>
+			<version>${mybatis-spring.version}</version>
 		</dependency>
 		<!-- junit -->
 		<dependency>
