@@ -1,4 +1,4 @@
-package com.sn.utils.base;
+package com.sn.utils.string;
 
 import java.io.InputStreamReader;
 import java.util.Properties;
