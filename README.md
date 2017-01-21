@@ -22,3 +22,4 @@
 21、mybatis分页工具（mySQL、oracle）；
 22、excel工具；
 23、二维码工具；
+24、fastjson工具；
