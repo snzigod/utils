@@ -29,6 +29,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.serializer.SerializerFeature;
 import com.sn.utils.string.Emptys;
 import com.sn.utils.string.StringUtil;
 
@@ -39,10 +40,17 @@ import com.sn.utils.string.StringUtil;
  */
 public final class JsonUtil {
     private static final Logger LOGGER = LoggerFactory.getLogger(JsonUtil.class);
+    
+	private static SerializerFeature[] features = new SerializerFeature[] {
+			SerializerFeature.WriteNullStringAsEmpty,
+			SerializerFeature.WriteNullListAsEmpty,
+			SerializerFeature.WriteMapNullValue,
+			SerializerFeature.WriteDateUseDateFormat,
+			SerializerFeature.WriteNullBooleanAsFalse};
 
     public static String toJson(Object bean) {
         try {
-            return JSON.toJSONString(bean);
+            return JSON.toJSONString(bean, features);
         } catch (Exception e) {
             LOGGER.error("Jsons.toJson ex, bean=" + bean, e);
         }
@@ -114,6 +122,6 @@ public final class JsonUtil {
             value = Emptys.EMPTY_STR;
         sb.append('"').append(key).append('"');
         sb.append(':');
-        sb.append('"').append(value).append('"');
-    }
+		sb.append('"').append(value).append('"');
+	}
 }
