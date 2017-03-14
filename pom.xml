@@ -168,6 +168,12 @@
 			<artifactId>mybatis-spring</artifactId>
 			<version>${mybatis-spring.version}</version>
 		</dependency>
+		<!-- solr -->
+		<dependency>
+			<groupId>org.apache.solr</groupId>
+			<artifactId>solr-solrj</artifactId>
+			<version>5.5.2</version>
+		</dependency>
 		<!-- junit -->
 		<dependency>
 			<groupId>junit</groupId>
