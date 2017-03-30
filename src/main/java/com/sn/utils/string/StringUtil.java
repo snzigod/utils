@@ -264,6 +264,7 @@ public abstract class StringUtil {
 
 	/**
 	 * 将指定字符串首字母转换成大写字母
+	 * 
 	 * @param str
 	 * @return
 	 */
@@ -306,4 +307,19 @@ public abstract class StringUtil {
 		}
 		return buffer.toString();
 	}
+
+	/**
+	 * 字符串存在在内
+	 * 
+	 * @param str
+	 * @param strs
+	 * @return
+	 */
+	public static Boolean isStrIn(String str, String... strs) {
+		for (String s : strs) {
+			return str.equals(s);
+		}
+		return false;
+	}
+
 }
