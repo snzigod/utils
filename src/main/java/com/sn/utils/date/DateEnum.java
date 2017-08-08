@@ -47,25 +47,25 @@ public interface DateEnum {
 		HH24MMSS("HHmmss", "HH:mm:ss", "HH时mm分ss秒");
 
 		private String format;
-		private String enFormat;
-		private String cnFormat;
+		private String formatEN;
+		private String formatCN;
 
 		public String getFormat() {
 			return format;
 		}
 
-		public String getEnFormat() {
-			return enFormat;
+		public String getFormatEN() {
+			return formatEN;
 		}
 
-		public String getCnFormat() {
-			return cnFormat;
+		public String getFormatCN() {
+			return formatCN;
 		}
 
-		DateFormat(String format, String enFormat, String cnFormat) {
+		DateFormat(String format, String formatEN, String formatCN) {
 			this.format = format;
-			this.enFormat = enFormat;
-			this.cnFormat = cnFormat;
+			this.formatEN = formatEN;
+			this.formatCN = formatCN;
 		}
 	}
 }
