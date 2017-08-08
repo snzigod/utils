@@ -1,0 +1,71 @@
+package com.sn.utils.date;
+
+/**
+ * 时间枚举
+ */
+public interface DateEnum {
+
+	/**
+	 * 时间格式枚举
+	 */
+	enum DateFormat implements DateEnum {
+		/**
+		 * 年
+		 */
+		YYYY("yyyy", "yyyy", "yyyy年"),
+		/**
+		 * 年月
+		 */
+		YYYYMM("yyyyMM", "yyyy-MM-dd", "yyyy年MM月dd日"),
+		/**
+		 * 年月日
+		 */
+		YYYYMMDD("yyyyMMdd", "yyyy-MM-dd HH", "yyyy年MM月dd日HH时"),
+		/**
+		 * 年月日时
+		 */
+		YYYYMMDDHH24("yyyyMMddHH", "yyyy-MM-dd HH:mm", "yyyy年MM月dd日HH时mm分"),
+		/**
+		 * 年月日时分
+		 */
+		YYYYMMDDHH24MM("yyyyMMddHHmm", "yyyy-MM-dd HH:mm:ss", "yyyy年MM月dd日HH时mm分ss秒"),
+		/**
+		 * 年月日时分秒
+		 */
+		YYYYMMDDHH24MMSS("yyyyMMddHHmmss", "", ""),
+		/**
+		 * 时
+		 */
+		HH24("HH", "HH", "HH时"),
+		/**
+		 * 时分
+		 */
+		HH24MM("HHmm", "HH:mm", "HH时mm分"),
+		/**
+		 * 时分秒
+		 */
+		HH24MMSS("HHmmss", "HH:mm:ss", "HH时mm分ss秒");
+
+		private String format;
+		private String enFormat;
+		private String cnFormat;
+
+		public String getFormat() {
+			return format;
+		}
+
+		public String getEnFormat() {
+			return enFormat;
+		}
+
+		public String getCnFormat() {
+			return cnFormat;
+		}
+
+		DateFormat(String format, String enFormat, String cnFormat) {
+			this.format = format;
+			this.enFormat = enFormat;
+			this.cnFormat = cnFormat;
+		}
+	}
+}
